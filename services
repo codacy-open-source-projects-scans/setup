@@ -674,8 +674,8 @@ fax             4557/tcp                        # FAX transmission service      
 hylafax         4559/tcp                        # HylaFAX client-server protocol  (new)
 sgi-dgl         5232/tcp        csedaemon       # SGI Distributed Graphics
 sgi-dgl         5232/udp
-hostmon         5355/tcp        llmnr           # hostmon uses TCP (nocol)
-hostmon         5355/udp        llmnr           # hostmon uses TCP (nocol)
+llmnr           5355/tcp        hostmon         # LLMNR
+llmnr           5355/udp        hostmon         # LLMNR
 canna           5680/tcp        auriga-router
 x11-ssh-offset  6010/tcp                        # SSH X11 forwarding offset
 xfs             7100/tcp        font-service    # X font server
