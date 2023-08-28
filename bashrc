@@ -15,6 +15,7 @@ if [ -z "$BASHRCSOURCED" ]; then
   # are we an interactive shell?
   if [ "$PS1" ]; then
     if [ -z "$PROMPT_COMMAND" ]; then
+      declare -a PROMPT_COMMAND
       case $TERM in
       xterm*)
         if [ -e /etc/sysconfig/bash-prompt-xterm ]; then
@@ -39,6 +40,7 @@ if [ -z "$BASHRCSOURCED" ]; then
     shopt -s histappend
     # Turn on checkwinsize
     shopt -s checkwinsize
+    # Change the default prompt string
     [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
     # You might want to have e.g. tty in prompt (e.g. more virtual machines)
     # and console windows
