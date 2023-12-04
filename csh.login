@@ -48,7 +48,7 @@ set history=1000
 
 if ( -d /etc/profile.d ) then
         set nonomatch
-        foreach i ( /etc/profile.d/*.csh )
+        foreach i ( /etc/profile.d/*.csh /etc/profile.d/csh.local )
                 if ( -r "$i" ) then
 	                        if ($?prompt) then
 	                              source "$i"
