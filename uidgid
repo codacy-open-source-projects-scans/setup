@@ -86,7 +86,8 @@ sshd	74	74	/var/empty/sshd		/usr/sbin/nologin	openssh-server
 radvd	75	75	/		/bin/false	radvd
 cyrus	76	(12)	/var/imap		/bin/bash	cyrus-imapd
 saslauth	-	76	-		-	cyrus-sasl, cyrus-imap
-arpwatch	77	77	/var/lib/arpwatch		/usr/sbin/nologin	arpwatch
+# Dynamic on new systems, removed Dec2023, can be freed if necessary later
+#arpwatch       77      77      /var/lib/arpwatch               /usr/sbin/nologin       arpwatch
 fax	78	78	/var/spool/fax		/usr/sbin/nologin	mgetty
 nocpulse	79	79	/etc/sysconfig/nocpulse		/bin/bash	nocpulse
 desktop	80	80	-		/usr/sbin/nologin	desktop-file-utils
