@@ -15,10 +15,14 @@ man::15:
 dialout::18:
 floppy::19:
 games::20:
+utmp::22:
 tape::33:
 video::39:
 ftp::50:
 lock::54:
 audio::63:
 users::100:
+input::104:
+render::105:
+sgx::106:
 nobody::65534:
